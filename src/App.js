@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     const consultarAPI = async () => {
       const appId = '05a1500d937b60ae77ecd69cd92d4ef3'
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`
 
       const respuesta = await fetch(url)
       const resultado = await respuesta.json()
